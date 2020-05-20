@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+ <ItemGroup>
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="3.1.2" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="3.1.2" />
+    <PackageReference Include="NServiceBus" Version="7.2.3" />
+    <PackageReference Include="NServiceBus.Extensions.DependencyInjection" Version="1.0.0" />
+    <PackageReference Include="NServiceBus.FluentConfiguration.WebApi" Version="1.2.0" />
+    <PackageReference Include="NServiceBus.Persistence.Sql" Version="5.0.0" />
+    <PackageReference Include="NServiceBus.SqlServer" Version="6.0.0" />
+    <PackageReference Include="NServiceBus.Transport.AzureServiceBus" Version="1.4.0" />
+    <PackageReference Include="NServiceBus.Metrics.ServiceControl" Version="3.0.4" />
+  </ItemGroup>
+
+ <ItemGroup>
+   <ProjectReference Include="..\Lab.MultiThreadingNSB.Contracts\Lab.MultiThreadingNSB.Contracts.csproj" />
+ </ItemGroup>
+
+</Project>

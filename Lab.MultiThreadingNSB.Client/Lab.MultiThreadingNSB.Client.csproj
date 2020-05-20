@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="..\Lab.MutliThreadingNSB.Host\Lab.MultiThredingNSB.Host.csproj" />
+    <ProjectReference Include="..\Lab.MulitThreadingNSB.Application\Lab.MulitThreadingNSB.Application.csproj" />
+    <ProjectReference Include="..\Lab.MultiThreadingNSB.Contracts\Lab.MultiThreadingNSB.Contracts.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="NServiceBus" Version="7.3.0" />
+  </ItemGroup>
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+</Project>

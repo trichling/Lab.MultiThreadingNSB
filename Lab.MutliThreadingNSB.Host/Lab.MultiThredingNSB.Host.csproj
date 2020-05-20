@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>e5ec8097-ed95-43ba-a17c-3db6f64ad6da</UserSecretsId>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="3.1.2" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="3.1.2" />
+    <PackageReference Include="NServiceBus" Version="7.2.3" />
+    <PackageReference Include="NServiceBus.Extensions.DependencyInjection" Version="1.0.0" />
+    <PackageReference Include="NServiceBus.FluentConfiguration.WebApi" Version="1.2.0" />
+    <PackageReference Include="NServiceBus.Persistence.Sql" Version="5.0.0" />
+    <PackageReference Include="NServiceBus.SqlServer" Version="6.0.0" />
+    <PackageReference Include="NServiceBus.Transport.AzureServiceBus" Version="1.4.0" />
+    <PackageReference Include="NServiceBus.Metrics.ServiceControl" Version="3.0.4" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="appsettings.development.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="appsettings.local.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Lab.MulitThreadingNSB.Application\Lab.MulitThreadingNSB.Application.csproj" />
+    <ProjectReference Include="..\Lab.MultiThreadingNSB.Contracts\Lab.MultiThreadingNSB.Contracts.csproj" />
+  </ItemGroup>
+</Project>
